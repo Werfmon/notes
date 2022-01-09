@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<header>
+  <div class="login-block">
+    <p class="profile">{{symbol}}</p>
+    <p class="username">{{user}}</p>
+    <a class="logout" href="../logoutuser">Logout</a>
+  </div>
+</header>
+<main>
+  <div class="addnote">
+    <form
+      class="addnote-form"
+      action="{% url 'notesapp:addnote' %}"
+      method="post"
+    >
+      {% csrf_token %}
+      <input placeholder="Name" type="text" name="name" />
+      <textarea placeholder="Content" type="text" name="content"></textarea>
+      <input type="submit" value="Add" />
+    </form>
+  </div>
+  <ul class="notes-all">
+    {% for note in notes %}
+    <li>
+      <p class="name-note">{{note.name}}</p>
+      <p>{{note.content}}</p>
+      <a href="{% url 'notesapp:deletenote' note.id %}">Delete</a>
+    </li>
+    {% endfor %}
+  </ul>
+</main>
+{% endblock content %} {% block css %}
+<link rel="stylesheet" href="{% static 'styles/login.css' %}" />
+<link rel="stylesheet" href="{% static 'styles/addingnotes.css' %}" />
+<link rel="stylesheet" href="{% static 'styles/notesall.css' %}" />
+{% endblock css %}

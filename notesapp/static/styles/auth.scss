@@ -1,0 +1,134 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  form > div {
+    display: flex;
+  }
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    border-bottom: 2px solid;
+    margin: 10px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: rgba(233, 227, 227, 0.178);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 4rem;
+    padding: 0.2rem 0.4rem;
+    margin-left: auto;
+    margin-right: 0.7rem;
+    box-sizing: content-box;
+    transition: background-color 0.4s, border 0.4s;
+    border: 2px solid rgba(255, 255, 255, 0.479);
+  }
+  input[type="submit"]:hover {
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    background-color: rgba(233, 227, 227, 0);
+  }
+  a{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    margin-left: 5px;
+  }
+  .login-h {
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+  }
+  .form-child {
+    height: 100%;
+    backdrop-filter: blur(70px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .login-container {
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    place-items: center center;
+    height: 100vh;
+    width: 100%;
+  }
+  .login-child {
+    grid-row: 3 / 5;
+    box-shadow: 5px 5px 8px rgb(188, 181, 218);
+    margin: 0 auto;
+    height: 30rem;
+    position: relative;
+    min-width: 20rem;
+    max-width: 22rem;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .color-1 {
+    height: 420px;
+    width: 420px;
+    background-color: rgba(47, 0, 255, 0.979);
+    position: absolute;
+    border-radius: 50%;
+    left: -1rem;
+    top: 5rem;
+  }
+  .color-2 {
+    height: 330px;
+    width: 330px;
+    background-color: rgb(39, 0, 180);
+    position: absolute;
+    border-radius: 50%;
+    top: -2rem;
+    right: -3rem;
+  }
+  .color-3 {
+    height: 280px;
+    width: 280px;
+    background-color: rgb(43, 12, 138);
+    position: absolute;
+    border-radius: 50%;
+    right: -5rem;
+    bottom: -5rem;
+  }
+  .color-4 {
+    height: 240px;
+    width: 240px;
+    background-color: rgba(8, 56, 161, 0.959);
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: -2rem;
+  }
+  .color-5 {
+    height: 240px;
+    width: 240px;
+    background-color: rgba(32, 32, 51, 0.603);
+    position: absolute;
+    border-radius: 50%;
+    top: -5rem;
+    left: -5rem;
+  }
+  .header-h1 {
+    text-align: center;
+    background-image: linear-gradient(
+      20deg,
+      rgb(2, 19, 170),
+      rgba(145, 13, 221, 0.979)
+    );
+    color: #fff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }

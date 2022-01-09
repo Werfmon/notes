@@ -1,0 +1,37 @@
+ul{
+    margin-top: 5rem;
+    padding-inline: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        color: #ddd;
+
+    }
+    a{
+        background-color: #1f2022;
+        color: #ddd;
+        border: rgb(22, 6, 235) 2px solid;
+        align-items: flex-end;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        border-radius: 4px;
+        margin: 1rem;
+        text-decoration: none;
+    }
+    p:nth-child(2){
+      width: 60%;
+
+    }
+    p{
+        margin: 1rem;
+    }
+    .name-note{
+        width: 20rem;
+    }
+}

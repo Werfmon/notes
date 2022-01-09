@@ -1,0 +1,72 @@
+.login-block {
+  color: #fff;
+  height: 3rem;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1f2022;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 20rem;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-color: #1606eb;
+}
+
+.username {
+  padding-inline: 2rem;
+}
+
+.logout {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5rem;
+  height: 3rem;
+  width: 5rem;
+  border: 2px #1606eb solid;
+  color: #fff;
+  background-color: rgba(57, 57, 59, 0);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  background-color: #0b0b0f;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 1rem;
+}
+/*# sourceMappingURL=login.css.map */

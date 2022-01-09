@@ -1,0 +1,3 @@
+*.css.map
+__pycache__
+*.sqlite3
